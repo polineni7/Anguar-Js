@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BitApps</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='Script.js'></script>
+</head>
+<body ng-module="MyModule">
+    <div ng-controller="MyController">
+        <div>
+            <table>
+                <thead>
+                    <th>
+                        Firstname
+                    </th>
+                    <th>
+                        Last name
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        Salary
+                    </th>
+                    <th>
+                        Time
+                    </th>
+                </thead>
+                <tr>
+                    <td ng-repeat="Fname in Firstname">
+                        {{emp.Firstname}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+</body>
+</html>>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="myCol='lightblue'">
+
+        <input style="background-color:{{myCol}}" ng-model="myCol">
+        
+    </div>
+    <p>AngularJS resolves the expression and returns the result.</p>
+
+    <p>The background color of the input box will be whatever you write in the input field.</p>
+
+    <div ng-app="" ng-init="quantity=1;cost=5">
+
+        <p>Total in dollar: {{ quantity * cost }}</p>
+        
+    </div>
+
+    <div ng-app="" ng-init="quantity=1;cost=5">
+
+        <p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+        
+    </div>
+
+    <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+
+        <p>The name is {{ firstName + " " + lastName }}</p>
+        
+    </div>
+
+    <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+
+        <p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+        
+    </div>
+
+    <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+
+        <p>The name is {{ person.lastName }}</p>
+        
+    </div>
+
+    <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+
+        <p>The name is <span ng-bind="person.lastName"></span></p>
+        
+    </div>
+
+    <div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+        <p>The third result is {{ points[2] }}</p>
+        
+    </div>
+
+    <div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+        <p>The third result is <span ng-bind="points[2]"></span></p>
+        
+    </div>
+
+
+</body>
+</html>

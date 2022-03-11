@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link data-require="font-awesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script data-require="tether@*" data-semver="1.4.0" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>
+                Cancel $http
+            </h1>
+        </div>
+    </div>
+    <div class="row content-group">
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary" ng-click="initiateRequest(true)">
+                Initiate request and cancel
+            </button>
+        </div>
+    </div>
+
+    <div class="row content-group">
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary" ng-click="initiateRequest()">
+                Initiate 404 request
+            </button>
+        </div>
+    </div>
+
+    <section ng-switch="!!response">
+        <section ng-switch-when="true">
+            <div class="row content-group">
+                <div class="col-sm-6">
+                    <h5>
+                        Response
+                    </h5>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label class="control-label">Status: {{response.status}}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-sm btn-primary" ng-click="clearResponse(response)">
+                        Clear response
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section ng-switch-when="false" ng-switch="processing">
+            <div ng-switch-when="true" class="row content-group">
+                <div class="col-sm-6">
+                    <p>
+                        <i class="fa fa-spinner fa-pulse"></i> Processing request…
+                    </p>
+                </div>
+            </div>
+
+            <div ng-switch-default class="row content-group">
+                <div class="col-sm-6">
+                    <p>
+                        Click above to initiate a request.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

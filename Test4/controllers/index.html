@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Binding Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Test4/controllers/HomeController.js"></script>
+    <script src="MainController.js"></script>
+    <script src="HomeController.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-app="ToDolist">
+    <div ng-controller="MainController">
+        <label>main</label>
+        <div ng-repeat="item in list">
+            {{item}}
+        </div>
+        <input ng-model="addToDa">
+    <button ng-click="addItem()">Ad this Item</button>    
+    </div>
+    <div ng-controller="HomeController">
+        <label>Home</label>
+        <div ng-repet="item in homelist">
+
+        {{items}}
+        </div>
+
+    </div>
+    <input ng-model="addToDa">
+    <button ng-click="addItem()">Add this item list</button>
+</div>
+</body>
+</html>

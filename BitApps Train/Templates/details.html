@@ -1,0 +1,50 @@
+<div ng-app="MyApi3" ng-controller="MyApiController">
+<fieldset>
+    <legend>Employes Details </legend>
+<div>
+    <div>
+        {{error}}
+    </div>
+    <br>
+<table>
+    <thead>
+        <tr>
+            <th>Country name</th>
+            <th>User Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="em in GetData">
+            <td> {{em.Country}} </td>
+            <td> {{em.Company}} </td>
+            <td> {{em.UserName}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</fieldset>
+</div>
+<table><div ng-app="MyApi2" ng-controller="MyApiController2">
+    <thead>
+        <th>
+            <td>User Id
+                </td>
+                <td> title</td>
+            </th>
+    </thead>
+    <tbody>
+     <tr ng-repeat="ad in Apidata2"> 
+         <td>
+             {{ad.id}}
+         </td>
+         <td>
+             {{ad.title}}
+         </td>
+    </tr>
+        
+</tbody>
+
+
+</div>
+</table>

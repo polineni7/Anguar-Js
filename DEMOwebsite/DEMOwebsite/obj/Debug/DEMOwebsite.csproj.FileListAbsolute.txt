@@ -1,0 +1,7 @@
+D:\Angular Js\DEMOwebsite\DEMOwebsite\bin\DEMOwebsite.dll.config
+D:\Angular Js\DEMOwebsite\DEMOwebsite\bin\DEMOwebsite.dll
+D:\Angular Js\DEMOwebsite\DEMOwebsite\bin\DEMOwebsite.pdb
+D:\Angular Js\DEMOwebsite\DEMOwebsite\obj\Debug\DEMOwebsite.csprojAssemblyReference.cache
+D:\Angular Js\DEMOwebsite\DEMOwebsite\obj\Debug\DEMOwebsite.csproj.CoreCompileInputs.cache
+D:\Angular Js\DEMOwebsite\DEMOwebsite\obj\Debug\DEMOwebsite.dll
+D:\Angular Js\DEMOwebsite\DEMOwebsite\obj\Debug\DEMOwebsite.pdb

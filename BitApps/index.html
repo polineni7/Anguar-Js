@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="Script.js"></script>
+    <script src='main.js'></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-app="MyModule">
+    <!-- <div id="overlay" onclick="off()"></div>
+    <div style="padding:20px">
+        <button onclick="on()">Dark Mode</button>
+    </div> -->
+    <!-- <div ng-controller="myController" class="jumbotron" > -->
+    <div ng-controller="myController">
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Address </th>
+                    <th>Zip</th>
+                    <th>Salary</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="emp in emps">
+                <td> {{emp.firstname}} </td>
+                <td> {{emp.lastname}} </td>
+                <td> {{emp.Address}} </td>
+                <td> {{emp.Zip}} </td>
+                <td> {{emp.Salary}} </td>
+                <td> {{emp.Gender}} </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

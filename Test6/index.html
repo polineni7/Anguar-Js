@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BitApps</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='Script.js'></script>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <img src="D:\Angular Js\Test6\Img\logo.jpg" alt="Web-Development" width="50" height="60"/>
+        <table class="center">
+            <tr>
+                <td>
+                    First Name
+                </td>
+                <td>
+                    <input type="text" ng-model="firstname"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name
+                </td>
+                <td>
+                    <input type="text" ng-model="lastname"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    <input type="radio" ng-model="gender" value="Male">Male
+                    <input type="radio" ng-model="gender" value="Female">Female
+                    <input type="radio" ng-model="gender" value="Other">Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Salary
+                </td>
+                <td>
+                    <input type="number" ng-model="salary"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                    <input type="text" ng-model="adds"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Time
+                </td>
+                <td>
+                    <input type="time" ng-model="ttime"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Local_Date_Time
+                </td>
+                <td>
+                    <input type="datetime-local" ng-model="day"/>
+                </td>
+            </tr>
+                <td>
+                   <!-- <input type="submit" ng-click="emp.submit" class="button" style="vertical-align:middle"/> -->
+                   <button ng-click="sub(firstname,lastname,gender,salary,adds,ttime,day)" class="button" >Submit</button>
+                </td>
+        </table>
+        <br/>
+        <br>
+        <table class="center">
+            <tr>
+                <td>
+                    First Name
+                </td>
+                <td>
+                    {{firstname}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last name
+                </td>
+                <td>
+                    {{lastname}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    {{gender}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Salary
+                </td>
+                <td>
+                    {{salary}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                    {{adds}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Transaction Time
+                </td>
+                <td>
+                    {{ttime}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Local Date Time
+                </td>
+                <td>
+                    {{day}}
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                    <th>
+                        Salary
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        Time 
+                    </th>
+                    <th>
+                         Local_Date_Time                   
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="center">
+                <tr>
+                    <td> {{fname}} </td>
+                    <td> {{lname}} </td>
+                    <td> {{ger}} </td>
+                    <td> {{salar}} </td>
+                    <td> {{add}} </td>
+                    <td> {{ttim}} </td>
+                    <td> {{da}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>></html>

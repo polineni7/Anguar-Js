@@ -1,0 +1,7 @@
+D:\Angular Js\WebPage\WebPage\bin\WebPage.dll.config
+D:\Angular Js\WebPage\WebPage\bin\WebPage.dll
+D:\Angular Js\WebPage\WebPage\bin\WebPage.pdb
+D:\Angular Js\WebPage\WebPage\obj\Debug\WebPage.csprojAssemblyReference.cache
+D:\Angular Js\WebPage\WebPage\obj\Debug\WebPage.csproj.CoreCompileInputs.cache
+D:\Angular Js\WebPage\WebPage\obj\Debug\WebPage.dll
+D:\Angular Js\WebPage\WebPage\obj\Debug\WebPage.pdb

@@ -1,0 +1,8 @@
+﻿<tbody data-ng-repeat="sub in subscriber">
+    <tr>
+        <td>{{sub.SubscriberID}}</td>
+        <td ng-blur="updSubscriber(sub,$event)" ng-dblclick="makeEditable($event)">{{sub.MailID}}</td>
+        <td>{{sub.SubscribedDate}}</td>
+        <td> <input type="button" id="Delete" value="Delete" data-ng-click="dltSubscriber(sub.SubscriberID)" /> </td>
+    </tr>
+</tbody> 

@@ -1,0 +1,23 @@
+<div ng-controller="detailsController">
+<fieldset>
+    <legend>Employes Details </legend>
+<div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="em in emp">
+            <td> {{em.name}} </td>
+            <td> {{em.gender}} </td>
+            <td> {{em.salary}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</fieldset>
+</div>

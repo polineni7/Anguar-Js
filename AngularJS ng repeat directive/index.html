@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BitApps</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='Script.js'></script>
+</head>
+<body ng-module="myModule">
+    <div ng-controller="myController">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in employess">
+                <td>
+                    {{emp.firtname}}
+                </td>
+                <td>
+                    {{emp.lastname}}
+                </td>
+                <td>
+                    {{emp.gender}}
+                </td>
+                <td>
+                    {{emp.salary}}
+                </td>
+            </tr>
+        </tbody>
+    </div>
+    
+</body>
+</html>></html>

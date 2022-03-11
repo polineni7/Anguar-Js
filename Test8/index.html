@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>BitApps</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src='Script.js'></script>
+</head>
+<body ng-module="myModule">
+    <div ng-controller="myController">
+        <ul>
+            <li ng-repeat="county in countries">
+                {{ county.name}}
+                <ul>
+                    <li ng-repeat="city in county.cities">
+                        {{city.name}}
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+D:\Angular Js\cancel web\bin\cancel web.dll.config
+D:\Angular Js\cancel web\bin\cancel web.dll
+D:\Angular Js\cancel web\bin\cancel web.pdb
+D:\Angular Js\cancel web\obj\Debug\cancel web.csprojAssemblyReference.cache
+D:\Angular Js\cancel web\obj\Debug\cancel web.csproj.CoreCompileInputs.cache
+D:\Angular Js\cancel web\obj\Debug\cancel web.dll
+D:\Angular Js\cancel web\obj\Debug\cancel web.pdb

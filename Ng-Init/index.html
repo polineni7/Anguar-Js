@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ng-Init-Angularjs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body ng-app>
+    <div ng-init=" emps=[
+    {name:"ram",gender:"male",salary=35000},
+    {name:"krishna",gender:"male",salary=35000}
+    ]">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>gender</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in emps">
+                <td> {{emp.name}} </td>
+                <td> {{emp.gender}} </td>
+                <td> {{emp.salary}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+    
+</body>
+</html>
